@@ -7,6 +7,7 @@ pipeline {
    stages {
        stage("buildmb2") {
            steps {
+              snDevOpsStep()
                echo "Building" 
                sleep 5
            }
@@ -14,6 +15,7 @@ pipeline {
        
        stage("testmb2") {
           steps {
+             snDevOpsStep()
                echo "Testing" 
                sleep 5
            }           
