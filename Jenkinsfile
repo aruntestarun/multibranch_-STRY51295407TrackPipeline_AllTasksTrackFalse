@@ -5,14 +5,14 @@ pipeline {
       maven 'Maven'
    }
    stages {
-       stage("build2") {
+       stage("buildmb2") {
            steps {
                echo "Building" 
                sleep 5
            }
        }
        
-       stage("test2") {
+       stage("testmb2") {
           steps {
                echo "Testing" 
                sleep 5
